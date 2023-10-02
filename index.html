@@ -1,106 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
+    <!-- Common Google Font-->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Lobster+Two&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap");
+    </style>
     <!--Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--Tailwind Flowbite file-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <!--navbar-->
 
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <img src="images/logo2.png" class="h-8 mr-3" alt="" />
-          <div class="flex md:order-2">
-            <button
-              type="button"
-              class="text-white bg-yellow-600 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Free Consultation
-            </button>
-            <button
-              data-collapse-toggle="navbar-cta"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-cta"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-cta"
-          >
-            <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-400  md:p-0 md:dark:text-blue-500"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Cases</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-400  md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-400  md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+    <!--Tailwind Flowbite file-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!--coustum Style-->
+    <style>
+        body {
+            font-family: "EB Garamond", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--navbar-->
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <img src="images/logo2.png" class="h-8 mr-3" alt="" />
+                <div class="flex md:order-2">
+                    <button type="button"
+                        class="text-white bg-yellow-600 font-EB Garamond focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Free Consultation
+                    </button>
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 font-EB Garamond text-gray-400 md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 font-EB Garamond text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 font-EB Garamond text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Cases</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 font-EB Garamond text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 font-EB Garamond text-gray-400 md:p-0 md: dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--banner-->
+        <div>
+            <section
+                class=" bg-cover  mt-8 rounded bg-no-repeat bg-[url('images/banner.png')] bg-gray-600 bg-blend-multiply">
+                <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                        We Provide Effective Legal Solutions
+                    </h1>
+                    <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                        <a href="#"
+                            class="inline-flex justify-start  py-3 px-9 text-base font-medium text-center text-gray-400 rounded-lg  bg-white">
+                            Search your services
+
+
+                            <a href="#"
+                                class="inline-flex justify-center text-gray-900 items-center py-3 px-2.5 text-base font-medium text-center text-white rounded-lg border bg-yellow-600 ">
+                                Search
+                            </a>
+                    </div>
+                </div>
+            </section>
         </div>
-      </nav>
+        <section class="text-center py-8">
+            <h1 class="text-4xl font-semibold py-3">The Legal Practice Area
+            </h1>
+            <p class="text-lg	">There are many variations of passages of Lorem Ipsum available, but the majority have
+                <br>suffered alteration
+                in some form, by injected humour.
+            </p>
+        </section>
     </header>
+    <main>
+        <!--Card-->
+        <section>
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css">
+            <div class=" min-h-screen min-w-screen flex justify-center items-center">
+                <div class="bg-white p-12 rounded-lg">
+
+                    <div class="grid md:grid-cols-3">
+                        <div class="border-b md:border-r p-6">
+                            <div class="text-center">
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/business.png" alt="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Business Law</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b md:border-r p-6 bg-gradient-to-bl from-gray-100 to-gray-50">
+                            <div class="text-center">
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center mb-3 mx-auto">
+                                    <img src="images/criminal.png" alt="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Criminal Law</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b p-6">
+                            <div class="text-center">
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/child.png" alt="" srcset="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Child Support</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3">
+                        <div class="border-b md:border-0 md:border-r p-6">
+                            <div class="text-center">
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/education.png" alt="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Education Law</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b md:border-0 md:border-r p-6">
+                            <div class="text-center">
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/divorce.png" alt="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Divorce Law</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-center">
+                                <div class="text-2xl  w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/tax.png" alt="">
+                                </div>
+                                <div class="text-xl font-semibold mb-2">Tax Law</div>
+                                <p class="text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <div class="text-2xl w-20 h-20 flex justify-center items-center  mb-3 mx-auto">
+                                    <img src="images/Frame.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center py-8">
+            <h1 class="text-4xl font-semibold py-3">What Our Client Say
+            </h1>
+            <p class="text-lg	">There are many variations of passages of Lorem Ipsum available, but the majority have
+                <br>suffered alteration
+                in some form, by injected humour.
+            </p>
+        </section>
+        <!--Carousel-->
+        
+       
+    </main>
+    <footer></footer>
 
     <!--Tailwind Flowbite script file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  </body>
+</body>
+
 </html>
